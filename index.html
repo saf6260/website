@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Scott's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style_main.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="style_index.css">
   </head>
   <body>
     <header>
@@ -20,40 +21,104 @@
       </nav>
       <hr>
       <section>
-        <h3>Education:</h3>
-        <ol>
-          <li>Rochester Institute of Technology</li><!--Want this all to be images and txt appears on hover over-->
-              <ul>
-                <li>3.60 GPA</li>
-                <li>2nd Year Software Engineering student</li>
-                <li>Member of RIT Pep Band </li>
-                <li>Head of Public Relations for the Society of Software Engineers</li>
-                <li>Taken Computer Science 1, Computer Science 2, and Personal Software Engineering</li>
-                <li>Currently enrolled in Math Models and Introduction to Software Engineering for fall 2018</li>
-              </ul>
-              <br>
-          <li>Windsor High School</li>
-            <ul>
-		<li>Graduated with honors May 2017</li>
-		<li>3.91 GPA and top 10% of class</li>
-		<li>Member of Marching Band, Orchestera, and Band</li>
-	    </ul>
-        </ol>
+        <h3><strong>Education:</strong></h3>
+	<div class= "row">
+	  <div class= "col-md-auto">
+          <div class= "container">
+	    <img src="rit.jpg" class="image">
+              <div class="overlay">
+                <div class = "text">
+		<p><strong>Rochester Institute of Technology</strong></p>
+		<p>3.60 GPA</p>
+                <p>Member of RIT Pep Band</p>
+		<p>Head of Public Relations for the Society of Software Engineers</p>
+                <p>Completed Computer Science 1, Computer Science 2, and Personal Software Engineering</p>
+                <p>Currently enrolled in Math Models and Introduction to Software Engineering for fall 2018</p>
+		</div>
+	      </div>
+	  </div>
+	  </div>
+	  <div class="col-md-auto">
+	  <div class= "container">
+	    <img src = "whs.jpg" class="image">
+	      <div class= "overlay">
+		<div class= "text">
+		<p><Strong>Windsor High School</strong></p>
+		<p>Graduated with honors May 2017</p>
+		<p>3.91 GPA and top 10% of class</p>
+		<p>Member of Marching Band, Orchestera, and Band</p>
+		</div>
+	      </div>
+          </div>
+	  </div>
+	</div>
       </section>
       <section>
-        <h3>Work Experience:</h3>
-        <ol>
-          <li>Spotlight Music</li>
-            <p>Info here</p>
-          </ol>
+        <h3><strong>Work Experience:</strong></h3>
+	<div class= "row">
+	<div class= "col-md-auto">
+	<div class= "container">
+	    <img src= "spotlight.JPG" class="image">
+		<div class= "overlay">
+		    <div class="text">
+			<p><strong>Spotlight Music</strong></li>
+			<p>Manager</p>
+			<p>Summer 2017 and Summer 2018</p>
+			<p>Promoted a friendly and focused atmosphere to assist customers with the purchase of musical instrument and accessories</p>
+			<p>Resolved store website design and technology issues</p>
+			<p>Assisted with inventory control and ensured employee's responsibilities are completed timely and accurately</p>
+		    </div>
+		</div>
+        </div>
+	</div>
+	<div class="col-md-auto">
+	<div class="container">
+	    <img src="windsor_park.jpg" class="image">
+		<div class="overlay">
+		    <div class= "text">
+			<p><strong>Park Supervisor for the Town of Windsor, Colorado</strong></p>
+			<p>Supervisor</p>
+			<p>Summer 2017</p>
+			<p>Responsible for monitoring youth sporting events to ensure safely, sportsmanship, and fair game play</p>
+			<p>Resolved problems, interpreted rules of the game, and promoted a positive atmosphere for players, spectators, parents, and officials</p>
+			<p>Supervised on-site staff including referees, score keepers, and concession workers</p>
+		    </div>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-auto">
+	<div class="container">
+	    <img src="subway.png" class="image">
+		<div class="overlay">
+		    <div class= "text">
+			<p><strong>Subway</strong></p>
+			<p>Assistant Manager</p>
+			<p>May 2015 - August 2016</p>
+			<p>Provided high level of service to customers</p>
+			<p>Prepped food, prepared sandwiches, and processed payments</p>
+			<p>Opened and closed the restaurant: cleaning, paperwork, and cash control</p>
+			<p>Trained new employees on company programs and procedures</p>
+			<p>On call to staff for troubleshooting and product run outs</p>
+			<p>Assisted with inventory control and weekly product orders</p>
+		    </div>
+		</div>
+	</div>
+	</div>
+      </div>
       </section>
       <section>
         <h3>Projects:</h3>
         <ul>
           <li>This website</li>
-            <p>Info here</p>
+            <p>See the current stage of development <a href="about.html">here</a> along with the plan for next stages</p>
           <li>Project Darby</li>
+	    <p>Using TensorFlow and Python 3, this project focused on teaching the general public how reinforcement learning works</p>
+	    <p>To show this, the game of blackjack was used</p>
+	    <p>There was a phsyicial version using paper and beads to represent if the "machine" would hit or not</p>
+	    <p>There was also a computer version of the game, running on eight Raspberry Pi 3's</p>
+	    <p>The website can be found <a href="http://github.com/chtinahow/project-Darby">here</a></p>
           <li>Project OctoPi</li>
+	    <p></p>
         </ul>
       </section>
       <section>

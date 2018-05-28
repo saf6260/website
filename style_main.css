@@ -1,5 +1,35 @@
 *{
-  background-color: #faf1ed;
+  background-color: #B8B8B8;
   line-height: 15px;
   color: #6d6866;
+}
+
+.header{
+    text-align: center;
+}
+
+.navigation{
+    list-style: none;
+    display: inline-block;
+    width: 50px;
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    color: #3090C7;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+h2{
+    color: #6D7B8D;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 30px;
 }
