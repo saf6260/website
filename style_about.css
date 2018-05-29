@@ -35,3 +35,13 @@
 ul{
     padding-left: 60px;
 }
+
+.information{
+    text-align: center;
+}
+
+.links{
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+}

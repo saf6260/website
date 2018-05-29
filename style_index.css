@@ -40,3 +40,28 @@ p, strong{
     padding: 3px;
     margin: 0px;
 }
+
+.website{
+    text-align: center;
+}
+
+.skill{
+    text-align: center;
+}
+
+.skills{
+    padding: 5px 3px;
+    word-wrap: normal;
+    display:inline-block;
+}
+
+.lang{
+    padding: 5px 3px;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+.plain-text{
+    font-size: 20px;
+    padding: 3px;
+}
