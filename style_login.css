@@ -1,0 +1,35 @@
+.login-container{
+    background-color: #B8B8B8;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+h1{
+    background-color: white;
+    border-radius: 20px;
+}
+
+h4{
+    text-align: center;
+}
+
+.square-login{
+    text-align: center;
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border-right: 5px #b0aeae solid;
+    border-bottom: 5px #b0aeae solid;
+    border-radius: 20px;
+}
+
+.square-signup{
+    text-align: center;
+    background-color: white;
+    height:600px;
+    width: 400px;
+    border-right: 3px #b0aeae solid;
+    border-bottom: 3px #b0aeae solid;
+    border-radius: 20px;
+}

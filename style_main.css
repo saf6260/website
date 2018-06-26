@@ -9,9 +9,10 @@
 }
 
 .navigation{
-    list-style: none;
+    text-align: center;
     display: inline-block;
-    width: 50px;
+    list-style: none;
+    width: 55px;
 }
 
 nav{
