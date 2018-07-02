@@ -7,7 +7,7 @@ function checkLoginReq(){
     var pass = true;
     for(var i = 0; i < loginReq.length; i++){
         if(loginReq[i].value.length < 1){
-            loginReq[i].placeholder += " is REQUIRED for login";
+            loginReq[i].placeholder = "REQUIRED for login";
        }
     }
     return pass;
@@ -17,7 +17,7 @@ function checkSignUpReq(){
     var pass = true;
     for(var i = 0; i < signUpReq.length; i++){
         if(signUpReq[i].value.length < 1){
-            signUpReq[i].placeholder += "is REQUIRED to sign up";
+            signUpReq[i].placeholder = "REQUIRED to sign up";
             pass = false;
         }
     }
