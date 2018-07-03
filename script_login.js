@@ -1,11 +1,11 @@
-var login = document.querySelector(".login");
-var signUp = document.querySelector(".signUp");
-var loginReq = document.querySelectorAll(".login_blank");
-var signUpReq = document.querySelectorAll(".signUp_blank");
+const login = document.querySelector(".login");
+const signUp = document.querySelector(".signUp");
+const loginReq = document.querySelectorAll(".login_blank");
+const signUpReq = document.querySelectorAll(".signUp_blank");
 
-function checkLoginReq(){
-    var pass = true;
-    for(var i = 0; i < loginReq.length; i++){
+const checkLoginReq = () => {
+    let pass = true;
+    for(let i = 0; i < loginReq.length; i++){
         if(loginReq[i].value.length < 1){
             loginReq[i].placeholder = "REQUIRED for login";
        }
@@ -13,9 +13,9 @@ function checkLoginReq(){
     return pass;
 }
 
-function checkSignUpReq(){
-    var pass = true;
-    for(var i = 0; i < signUpReq.length; i++){
+const checkSignUpReq = () => {
+    let pass = true;
+    for(let i = 0; i < signUpReq.length; i++){
         if(signUpReq[i].value.length < 1){
             signUpReq[i].placeholder = "REQUIRED to sign up";
             pass = false;
@@ -26,10 +26,20 @@ function checkSignUpReq(){
 
 login.addEventListener("click", function(){
     console.log("Login button works");
-    checkLoginReq();
+    let loginValid = checkLoginReq();
+    if (loginValid){
+        console.log("Credential minimums met for login");
+    } else{
+        console.log("Credential minimums not met for login, reprompting");
+    }
 })
 
 signUp.addEventListener("click", function(){
     console.log("Sign up button works");
-    checkSignUpReq();
+    let signUpValid = checkSignUpReq();
+    if (signUpValid){
+        console.log("Credential minimums met for Sign Up");
+    } else{
+        console.log("Credential minimums not met for sign up, reprompting");
+    }
 })
