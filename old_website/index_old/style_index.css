@@ -1,0 +1,67 @@
+.container{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 875px;
+    height: 450px;
+}
+
+.overlay{
+    position: absolute;
+    position-left: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    width: 900px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay{
+    opacity: .9;
+}
+
+.text{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 2px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+p, strong{
+    padding: 3px;
+    margin: 0px;
+}
+
+.website{
+    text-align: center;
+}
+
+.skill{
+    text-align: center;
+}
+
+.skills{
+    padding: 5px 3px;
+    word-wrap: normal;
+    display:inline-block;
+}
+
+.lang{
+    padding: 5px 3px;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+.plain-text{
+    font-size: 20px;
+    padding: 3px;
+}

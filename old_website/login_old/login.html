@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style_main.css">
+    <link rel="stylesheet" type="text/css" href="style_login.css">
+</head>
+<body>
+    <div class="login-container">
+	<section class="square-login">
+	    <h1>Login:</h1>
+        <hr>
+        <label for="email_login"><b>Email</b></label>
+        <input class="login_blank" type="email" placeholder="Enter Email" name="email_login" required>
+        <label for="password"><b>Password</b></label>
+        <input class= "login_blank" type="password" placeholder="Enter Password" name="password" required>
+        <button class="login" type="submit">Login</button>
+	</section>
+	<section class="square-signup">
+	    <h1>New? Sign Up Here:</h1>
+        <hr>
+        <label for="first_name"><b>First Name</b></label>
+        <input class="signUp_blank" type="text" placeholder="Enter First Name" name="first_name" required>
+        <label for="last_name"><b>Last Name</b></label>
+        <input class="signUp_blank" type="text" placeholder="Enter Last Name" name="last_name" required>
+        <label for="email_pass"><b>Email</b></label>
+        <input class="signUp_blank" type="email" placeholder="Enter email (must include @)" name="email_pass" required>
+        <label for="pass"><b>Password</b></label>
+        <input class="signUp_blank" type="password" placeholder="Enter a secure password here" name="pass" required>
+        <button class= "signUp" type="submit">Sign Up</button>
+	</section>
+    </div>
+    <div>
+	<section>
+	    <h4>Want to go back? Click right <a href="../game_old/game.html">here</a></h4>
+	</section>
+    </div>
+    <script type="text/javascript" src="script_login.js"></script>
+</body>
+</html>
