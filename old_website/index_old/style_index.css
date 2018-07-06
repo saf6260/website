@@ -37,6 +37,7 @@ img{
 }
 
 p, strong{
+    line-height: 20px;
     padding: 3px;
     margin: 0px;
 }
