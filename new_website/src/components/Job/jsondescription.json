@@ -1,0 +1,86 @@
+[
+   {
+      "type": "education",
+      "number": "1",
+      "description": "Rochester Institute of Technology\n3.60 GPA\nCollege of Computer and Information Science's Dean's List Member Fall 2017 and Spring 2018\nMember of RIT Pep Band\nHead of Public Relations for the Society of Software Engineers\nCompleted Computer Science 1, Computer Science 2, and Personal Software Engineering\nCurrently enrolled in Math Models and Introduction to Software Engineering for fall 2018",
+      "image": "../../../pictures/rit.jpg"
+   },
+   {
+      "type": "education",
+      "number": "2",
+      "description": "Windsor High School\nGraduated with honors May 2017\n3.91 GPA and top 10% of class\nMember of Marching Band, Orchestra, and Band",
+      "image": "../../../pictures/whs.jpg"
+   },
+   {
+      "type": "work",
+      "number": "1",
+      "description": "Lab Assistant\nPromoted a clean and secure work environment for students in team room spaces\nOpened and closed the lab spaces\nMade sure lab equitment was woking properly\nEnsured inventory and counts of people in the lab spaces were accurate each shift",
+      "image": "../../../pictures/se-banner.jpg"
+   },
+   {
+      "type": "work",
+      "number": "2",
+      "description": "Spotlight Music\nManager\nSummer 2017 and Summer 2018\nPromoted a friendly and focused atmosphere to assist customers with the purchase of musical instrument and accessories\nResolved store website design and technology issues\nAssisted with inventory control and ensured employee's responsibilities are completed timely and accurately",
+      "image": "../../../pictures/spotlight.JPG"
+   },
+   {
+      "type": "work",
+      "number": "3",
+      "description": "Park Supervisor for the Town of Windsor, Colorado\nSupervisor\nSummer 2017\nResponsible for monitoring youth sporting events to ensure safely, sportsmanship, and fair game play\nResolved problems, interpreted rules of the game, and promoted a positive atmosphere for players, spectators, parents, and officials\nSupervised on-site staff including referees, score keepers, and concession workers",
+      "image": "../../../pictures/windsor_park.jpg"
+   },
+   {
+      "type": "work",
+      "number": "4",
+      "description": "Subway\nAssistant Manager\nMay 2015 - August 2016\nProvided high level of service to customers\nPrepped food, prepared sandwiches, and processed payments\nOpened and closed the restaurant: cleaning, paperwork, and cash control\nTrained new employees on company programs and procedures\nOn call to staff for troubleshooting and product run outs\nAssisted with inventory control and weekly product orders",
+      "image": "../../../pictures/subway.png"
+   },
+   {
+      "type": "projects",
+      "number": "1",
+      "description": "This website\nSummer 2018\nSee the current stage of development along with the plan for next stages under the sprint breakdown tab of the about section",
+      "image": ""
+   },
+   {
+      "type": "projects",
+      "number": "2",
+      "description": "Project Darby\nSpring 2018\nUsing TensorFlow and Python 3, this project focused on teaching the general public how reinforcement learning works\nTo show this, the game of blackjack was used\nThere was a phsyicial version using paper and beads to represent if the 'machine' would hit or not\nThere was also a computer version of the game, running on eight Raspberry Pi 3's\nThe Github page can be found http://github.com/chtinahow/project-Darby",
+      "image": "../../../pictures/blackjack_popularity_de-300x209.png"
+   },
+   {
+      "type": "projects",
+      "number": "3",
+      "description": "Project OctoPi\nFall 2017-Spring 2018\nAttemped to present the community around RIT with how computers can communicate with one another\nDecided to integrate into project darby, as it would present the technology in a better way to the audience",
+      "image": "../../../pictures/octopi.jpg"
+   },
+   {
+      "type": "skills",
+      "number": "1",
+      "description": "Programming\nCustomer Service\nHard Work\nFocus on Tasks at Hand\nLeadership\nTeamwork\nTime Management\nGithub\nPython 3\nJava\nC\nRuby\nSQL\nJavaScript\nHtml\nCSS",
+      "image": ""
+   },
+   {
+      "type": "activities",
+      "number": "1",
+      "description": "Society of Software Engineers\nHead of Public Relations for 2018-2019 school year\nPreviously Head of New Student Outreach Spring 2018\nWork in a collaborative lab space in order to promote the completion of projects and to help one another with difficult assignments and projects\nOrganization's website can be found at http://sse.rit.edu",
+      "image": "../../../pictures/sse.png"
+   },
+   {
+      "type": "activities",
+      "number": "2",
+      "description": "Hockey\n15 seasons completed\nTraveled across states for competitions\nPlayed for both RIT intramural and Norther Colorado Junior Eagles\nTeamwork, hard work, and focus were the main themes throughout all the seasons completed",
+      "image": "../../../pictures/hockey.jpg"
+   },
+   {
+      "type": "activities",
+      "number": "3",
+      "description": "Indoor Soccer\nRIT Pep Bandits Intramural Indoor Soccer\n1 Year Completed\nFocus on teamwork, hard work, and focus",
+      "image": "../../../pictures/indoor-soccer.jpg"
+   },
+   {
+      "type": "activities",
+      "number": "4",
+      "description": "RIT Pep Band\nMember since fall 2017\nContinually amplify and excite other students and fans about RIT athletic events and competitions\nPromote a friendly and exciting atmosphere during games and other activities\nStudent lead and organized",
+      "image": "../../../pictures/pepband.jpg"
+   }
+]

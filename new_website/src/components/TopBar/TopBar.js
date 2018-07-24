@@ -6,7 +6,7 @@ const TopBar = () => {
     return(
         <div className = 'bb'>
             <Title />
-            <Navigation />
+            <Navigation isSignedIn={false}/>
         </div>
     );
 }
