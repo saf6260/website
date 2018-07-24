@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import TopBar from './components/TopBar/TopBar';
 
 class App extends Component {
   render() {
       return (
-          <h1>Hello World</h1>
+          <div>
+            <TopBar />
+          </div>
     );
   }
 }
