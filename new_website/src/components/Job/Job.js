@@ -12,8 +12,8 @@ const getData = (info, num) => {
     }
 }
 
-const Job = () => {
-    const data = getData('education', '1');
+const Job = ({changeNumber, changeTopic, topic, num}) => {
+    const data = getData(topic[0], num);
 
     return(
         <div className='ba bw2 mt5 ml5 mr5'>
