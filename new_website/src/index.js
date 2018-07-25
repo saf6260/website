@@ -8,7 +8,7 @@ import {createStore, combineReducers} from 'redux';
 import {login, changeTopic, changeNumber} from './reducers';
 import 'tachyons';
 
-const rootReducer = combineReducers({login, changeTopic, changeNumber})
+const rootReducer = combineReducers({login, changeTopic, changeNumber, })
 
 const store = createStore(rootReducer); 
 

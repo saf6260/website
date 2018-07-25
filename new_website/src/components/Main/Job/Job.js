@@ -12,11 +12,11 @@ const getData = (info, num) => {
     }
 }
 
-const Job = ({changeNumber, changeTopic, topic, num}) => {
+const Job = ({topic, num}) => {
     const data = getData(topic[0], num);
 
     return(
-        <div className='ba bw2 mt5 ml5 mr5'>
+        <div className='ba bw2 mt5 ml4 mr4'>
             <br></br>
             <Image image={data[1]}/>
             <Description data={data[0]}/>

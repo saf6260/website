@@ -19,7 +19,8 @@ export const login = (state = initialUser, action = {}) => {
 }
 
 const initalTopic = {
-    topic: ['education', 'work', 'projects', 'skills', 'activities']
+    topic: ['education', 'work', 'projects', 'skills', 'activities'],
+    length: 2
 }
 
 export const changeTopic = (state = initalTopic, action = {}) => {
@@ -32,13 +33,13 @@ export const changeTopic = (state = initalTopic, action = {}) => {
 }
 
 const initialNumber = {
-    number: '1'
+    number: '1',
 }
 
 export const changeNumber = (state = initialNumber, action = {}) => {
     switch(action.type){
         case CHANGE_NUMBER:
-            return {...state, number: action.payload}
+            return Object.assign({}, state, {number: action.payload});
         default:
             return state;
     }
