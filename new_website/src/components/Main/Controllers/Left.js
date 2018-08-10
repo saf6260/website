@@ -1,7 +1,7 @@
 import React from 'react';
 import './controllers.css';
 
-const Left = ({changeNumber, num, length}) => {
+const Left = ({changeNumber, num, length, type}) => {
 
     var able = true;
 

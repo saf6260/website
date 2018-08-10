@@ -1,10 +1,28 @@
 import {
-    CHANGE_NUMBER,
+    CHANGE_EDUCATION,
+    CHANGE_WORK,
+    CHANGE_PROJECTS,
+    CHANGE_ACTIVITIES,
     CHANGE_LOGIN,
 } from './constants.js';
 
-export const changeNumber = (number) => ({
-    type: CHANGE_NUMBER,
+export const changeEducation = (number) => ({
+    type: CHANGE_EDUCATION,
+    payload: number
+})
+
+export const changeWork = (number) => ({
+    type: CHANGE_WORK,
+    payload: number
+})
+
+export const changeProjects = (number) => ({
+    type: CHANGE_PROJECTS,
+    payload: number
+})
+
+export const changeActivities = (number) => ({
+    type: CHANGE_ACTIVITIES,
     payload: number
 })
 

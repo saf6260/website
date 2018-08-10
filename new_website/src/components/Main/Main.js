@@ -4,7 +4,7 @@ import Left from './Controllers/Left';
 import Right from './Controllers/Right';
 import './Main.css';
 
-const Main = ({changeNumber, num}) => {
+const Main = ({changeEdu, changeWork, changeAct, changeProj, edu, work, proj, act}) => {
 
     return(
         <div className='general pt6'>
@@ -17,9 +17,9 @@ const Main = ({changeNumber, num}) => {
                 style={{display: 'flex', justifyContent: 'center'}}
                 className='pb2'
             >
-                <Left changeNumber={changeNumber} num={num} length={2}/>
-                <Job topic='education' num={num}/>
-                <Right changeNumber={changeNumber} num={num} length={2}/>
+                <Left changeNumber={changeEdu} num={edu} length={2} type={'education'}/>
+                <Job topic='education' num={edu}/>
+                <Right changeNumber={changeEdu} num={edu} length={2} type={'education'}/>
             </div>
 
             <p
@@ -30,9 +30,9 @@ const Main = ({changeNumber, num}) => {
             <div 
                 style={{display: 'flex', justifyContent: 'center'}}
             >
-                <Left changeNumber={changeNumber} num={num} length={2}/>
-                <Job topic='work' num={num}/>
-                <Right changeNumber={changeNumber} num={num} length={2}/>
+                <Left changeNumber={changeWork} num={work} length={2} type={'work'}/>
+                <Job topic='work' num={work}/>
+                <Right changeNumber={changeWork} num={work} length={2} type={'work'}/>
             </div>
 
             <p
@@ -44,9 +44,9 @@ const Main = ({changeNumber, num}) => {
                 style={{display: 'flex', justifyContent: 'center'}}
                 className='pb2'
             >
-                <Left changeNumber={changeNumber} num={num} length={2}/>
-                <Job topic='projects' num={num}/>
-                <Right changeNumber={changeNumber} num={num} length={2}/>
+                <Left changeNumber={changeProj} num={proj} length={2} type={'projects'}/>
+                <Job topic='projects' num={proj}/>
+                <Right changeNumber={changeProj} num={proj} length={2} type={'projects'}/>
             </div>
 
             <p
@@ -58,7 +58,7 @@ const Main = ({changeNumber, num}) => {
                 style={{display: 'flex', justifyContent: 'center'}}
                 className='pb2'
             >
-                <Job topic='skills' num={num}/>
+                <Job topic='skills' num={'1'}/>
             </div>
 
             <p
@@ -69,9 +69,9 @@ const Main = ({changeNumber, num}) => {
             <div 
                 style={{display: 'flex', justifyContent: 'center'}}
             >
-                <Left changeNumber={changeNumber} num={num} length={4}/>
-                <Job topic='activities' num={num}/>
-                <Right changeNumber={changeNumber} num={num} length={4}/>
+                <Left changeNumber={changeAct} num={act} length={4} type={'activities'}/>
+                <Job topic='activities' num={act}/>
+                <Right changeNumber={changeAct} num={act} length={4} type={'activities'}/>
             </div>
         </div>
     );

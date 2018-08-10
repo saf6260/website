@@ -1,5 +1,8 @@
 import{
-    CHANGE_NUMBER,
+    CHANGE_EDUCATION,
+    CHANGE_WORK,
+    CHANGE_PROJECTS,
+    CHANGE_ACTIVITIES,
     CHANGE_LOGIN
 } from './constants.js'
 
@@ -18,13 +21,22 @@ export const login = (state = initialUser, action = {}) => {
 }
 
 const initialNumber = {
-    number: '1',
+    education: '1',
+    work: '1',
+    projects: '1',
+    activities: '1'
 }
 
 export const changeNumber = (state = initialNumber, action = {}) => {
     switch(action.type){
-        case CHANGE_NUMBER:
-            return Object.assign({}, state, {number: action.payload});
+        case CHANGE_EDUCATION:
+            return {...state, education: action.payload};
+        case CHANGE_WORK:
+            return {...state, work: action.payload};
+        case CHANGE_PROJECTS:
+            return {...state, projects: action.payload};
+        case CHANGE_ACTIVITIES:
+            return{...state, activities: action.payload};
         default:
             return state;
     }
