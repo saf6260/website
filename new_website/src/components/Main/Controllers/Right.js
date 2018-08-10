@@ -22,7 +22,7 @@ const Right = ({changeNumber, num, length}) => {
 
     return(
         <div 
-            className='rectangle mt5'
+            className='rectangle mt1'
             onMouseOver = {moveForward}
             onMouseOut = {changeAble}
         >

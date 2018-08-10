@@ -1,13 +1,7 @@
 import {
-    CHANGE_TOPIC,
     CHANGE_NUMBER,
-    CHANGE_LOGIN
+    CHANGE_LOGIN,
 } from './constants.js';
-
-export const changeTopic = (topic) => ({
-    type: CHANGE_TOPIC,
-    payload: topic
-})
 
 export const changeNumber = (number) => ({
     type: CHANGE_NUMBER,

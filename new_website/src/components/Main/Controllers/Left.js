@@ -22,7 +22,7 @@ const Left = ({changeNumber, num, length}) => {
     
     return(
         <div 
-            className='rectangle mt5'
+            className='rectangle mt1'
             onMouseOver={moveBack}
             onMouseOut={changeAble}
         >

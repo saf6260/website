@@ -1,5 +1,4 @@
 import{
-    CHANGE_TOPIC,
     CHANGE_NUMBER,
     CHANGE_LOGIN
 } from './constants.js'
@@ -13,20 +12,6 @@ export const login = (state = initialUser, action = {}) => {
     switch(action.type){
         case CHANGE_LOGIN:
             return Object.assign({}, state, {user: action.payload, isSignedIn: true}); 
-        default:
-            return state;
-    }
-}
-
-const initalTopic = {
-    topic: ['education', 'work', 'projects', 'skills', 'activities'],
-    length: 2
-}
-
-export const changeTopic = (state = initalTopic, action = {}) => {
-    switch(action.type){
-        case CHANGE_TOPIC:
-            return {...state, topic: action.payload}
         default:
             return state;
     }
