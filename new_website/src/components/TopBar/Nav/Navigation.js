@@ -6,17 +6,35 @@ const general = () => {
         <nav style={{display: 'flex', justifyContent: 'center', background: 'transparent'}}>
             <div className = 'dropdown'>
                 <span className = 'f4 dim ph4 pointer pv2'>
-                    About
+                    Projects
                 </span>
                 <div className = 'dropdown-content'>
                     <p className = 'f4 dim pointer ph4'>
-                        Face Recognition
+                        <a
+                            href=''
+                            className='black no-underline'
+                            style={{background:'transparent'}}
+                        >
+                            Sprint Breakdown
+                        </a>
                     </p>
                     <p className = 'f4 dim pointer ph4'>
-                        Sprint Breakdown
+                        <a 
+                            href='https://smart-brain-saf.herokuapp.com/'
+                            className='black no-underline'
+                            style={{background:'transparent'}}
+                        >
+                            Face Recognition
+                        </a>
                     </p>
                     <p className = 'f4 dim pointer ph4'>
-                        Old Website
+                        <a
+                            href='http://www.scottalexf.com/old_website/index_old/index.html'
+                            className='black no-underline'
+                            style={{background:'transparent'}}
+                        >
+                            Old Website
+                        </a>
                     </p>
                 </div>
             </div>
@@ -26,7 +44,22 @@ const general = () => {
                 </span>
                 <div className = 'dropdown-content'>
                     <p className = 'f4 dim pointer ph4'>
-                        View Resume
+                        <a 
+                            href='https://www.dropbox.com/s/9giinrx539qso3c/Resume-July2018.pdf'
+                            className='black no-underline'
+                            style={{background: 'transparent'}}
+                        >
+                            View Resume
+                        </a>
+                    </p>
+                    <p className = 'f4 dim pointer ph4'>
+                        <a 
+                            href='https://www.dropbox.com/s/9giinrx539qso3c/Resume-July2018.pdf?dl=1'
+                            className='black no-underline'
+                            style={{background: 'transparent'}}
+                        >
+                            Download Resume
+                        </a>
                     </p>
                 </div>
             </div>
@@ -58,11 +91,14 @@ const Navigation = ({onRouteChange, isSignedIn}) => {
                 {general()}
                 <div className = 'dropdown'>
                     <span className = 'f4 dim black ph4 pointer pv2'>
-                        Login
+                        Account
                     </span>
                     <div className = 'dropdown-content'>
                         <p className = 'f4 dim pointer ph4'>
                             Register
+                        </p>
+                        <p className = 'f4 dim pointer ph4'>
+                            Login
                         </p>
                     </div>
                 </div>
