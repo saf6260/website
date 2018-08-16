@@ -3,7 +3,8 @@ import{
     CHANGE_WORK,
     CHANGE_PROJECTS,
     CHANGE_ACTIVITIES,
-    CHANGE_LOGIN
+    CHANGE_LOGIN,
+    CHANGE_ROUTE
 } from './constants.js'
 
 const initialUser = {
@@ -37,6 +38,19 @@ export const changeNumber = (state = initialNumber, action = {}) => {
             return {...state, projects: action.payload};
         case CHANGE_ACTIVITIES:
             return{...state, activities: action.payload};
+        default:
+            return state;
+    }
+}
+
+const initialRoute = {
+    route: 'home'
+}
+
+export const changeRoute = (state = initialRoute, action = {}) => {
+    switch(action.type){
+        case CHANGE_ROUTE:
+            return {...state, route: action.payload};
         default:
             return state;
     }

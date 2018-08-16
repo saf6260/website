@@ -3,11 +3,11 @@ import Title from './Title/title';
 import Navigation from './Nav/Navigation';
 import './TopBar.css';
 
-const TopBar = () => {
+const TopBar = ({changeRoute}) => {
     return(
         <div className = 'bb fixed'>
             <Title />
-            <Navigation isSignedIn={false}/>
+            <Navigation isSignedIn={false} changeRoute={changeRoute}/>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 
-const general = () => {
+const general = (changeRoute) => {
     return(
         <nav style={{display: 'flex', justifyContent: 'center', background: 'transparent'}}>
             <div className = 'dropdown'>
@@ -9,14 +9,8 @@ const general = () => {
                     Projects
                 </span>
                 <div className = 'dropdown-content'>
-                    <p className = 'f4 dim pointer ph4'>
-                        <a
-                            href=''
-                            className='black no-underline'
-                            style={{background:'transparent'}}
-                        >
+                    <p className = 'f4 dim pointer ph4' onClick={() => changeRoute('sprint')}>
                             Sprint Breakdown
-                        </a>
                     </p>
                     <p className = 'f4 dim pointer ph4'>
                         <a 
@@ -67,11 +61,12 @@ const general = () => {
     );
 }
 
-const Navigation = ({onRouteChange, isSignedIn}) => {
+const Navigation = ({changeRoute, isSignedIn}) => {
+
     if(isSignedIn) {
         return(
             <nav style={{display: 'flex', justifyContent: 'center'}}>
-                {general()}
+                {general(changeRoute)}
                 <div className = 'dropdown'>
                     <span className = 'f4 dim black ph4 pointer pv2'>
                         Hi, Scott
@@ -88,7 +83,7 @@ const Navigation = ({onRouteChange, isSignedIn}) => {
     else{
         return(
             <nav style={{display: 'flex', justifyContent: 'center'}}>
-                {general()}
+                {general(changeRoute)}
                 <div className = 'dropdown'>
                     <span className = 'f4 dim black ph4 pointer pv2'>
                         Account

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Description.css';
 
 const Description = ({data, type, id}) => {
 
@@ -6,35 +7,32 @@ const Description = ({data, type, id}) => {
 
     const general = () => {
         return(
-            <div>
-                <p>{splitData[0]}</p>
-                <p>{splitData[1]}</p>
-                <p>{splitData[2]}</p>
-                <p>{splitData[3]}</p>
-                <p>{splitData[4]}</p>
-                <p>{splitData[5]}</p>
-                <p>{splitData[6]}</p>
-                <p>{splitData[7]}</p>
+            <div className='main'>
+                <p className='short'>{splitData[0]}</p>
+                <p className='short'>{splitData[1]}</p>
+                <p className='short'>{splitData[2]}</p>
+                <p className='large'>{splitData[3]}</p>
+                <p className='large'>{splitData[4]}</p>
+                <p className='large'>{splitData[5]}</p>
+                <p className='large'>{splitData[6]}</p>
+                <p className='large'>{splitData[7]}</p>
                 <p>{splitData[8]}</p>
             </div>
         );
     }
 
-    console.log(type + ', ' + id);
-
     if(type==='skills'){
         return(
-            <div>
-                <p className = 'tc ma1 f3'>
-                    {splitData[0]} --- {splitData[1]} --- {splitData[2]} --- {splitData[3]} --- {splitData[4]} --- {splitData[5]} --- {splitData[6]} --- {splitData[7]} --- {splitData[8]}
-                </p>
+            <div style={{background:'#e9fcf9'}}>
+                <p className = 'tc ml1 mr1 mb1 f3 main'>
+                    {splitData[0]} --- {splitData[1]} --- {splitData[2]} --- {splitData[3]} --- {splitData[4]} --- {splitData[5]} --- {splitData[6]} --- {splitData[7]} --- {splitData[8]} --- {splitData[9]} --- {splitData[10]} --- {splitData[11]} --- {splitData[12]} --- {splitData[13]} --- {splitData[14]} --- {splitData[15]} --- {splitData[16]} --- {splitData[17]}                </p>
             </div>
         );
     }
 
     else if(type==='projects' && id===undefined){
         return(
-            <div className='tc ma1 f3'>
+            <div className='tc ma1 f3 main' style={{height: '350px'}}>
                 {general()}
             </div>
         );
@@ -42,7 +40,7 @@ const Description = ({data, type, id}) => {
 
     else{
         return(
-            <div className='tc ma1 f4'>
+            <div className='tc ma1 f3'>
                 {general()}
             </div>
         );

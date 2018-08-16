@@ -1,7 +1,7 @@
 .rectangle{
-    height: 675px;
+    height: 720px;
     width: 75px;
-    background: orange;
+    background: transparent;
 }
 
 .triangle-left{
@@ -10,7 +10,7 @@
     margin-top: 320px;
     margin-left: 10px;
     border-top: 25px solid transparent;
-    border-right: 50px solid lightGrey;
+    border-right: 50px solid #f5e6bc;
     border-bottom: 25px solid transparent;
 }
 
@@ -20,6 +20,6 @@
     margin-top: 320px;
     margin-left: 10px;
     border-top: 25px solid transparent;
-    border-left: 50px solid lightGrey;
+    border-left: 50px solid #f5e6bc;
     border-bottom: 25px solid transparent;
 }

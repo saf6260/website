@@ -3,8 +3,9 @@ import {connect} from 'react-redux';
 import './App.css';
 import TopBar from './components/TopBar/TopBar';
 import Main from './components/Main/Main';
+import Sprint from './components/Sprint/Sprint';
 
-import {changeEducation, changeWork, changeProjects, changeActivities, login} from './actions'
+import {changeEducation, changeWork, changeProjects, changeActivities, login, changeCurrentRoute} from './actions'
 
 const mapStateToProps = state => {
     return {
@@ -15,6 +16,7 @@ const mapStateToProps = state => {
         skills: state.changeNumber.skills,
         projects: state.changeNumber.projects,
         activities: state.changeNumber.activities,
+        route: state.changeRoute.route,
     }
 }
 
@@ -24,34 +26,39 @@ const mapDispatchToProps = (dispatch) => {
         onChangeEducation: (event) => dispatch(changeEducation(event)),
         onChangeWork: (event) => dispatch(changeWork(event)),
         onChangeProjects: (event) => dispatch(changeProjects(event)),
-        onChangeActivities: (event) => dispatch(changeActivities(event))
+        onChangeActivities: (event) => dispatch(changeActivities(event)),
+        onRouteChange: (event) => dispatch(changeCurrentRoute(event))
     }
 }
 
 class App extends Component {
-    componentDidMount() {
-        window.addEventListener('scroll', this.props.onChangeTopic);
-    }
-
     render() {
-        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities} = this.props;
+        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange} = this.props;
       return (
-            <div>
-                <TopBar />
-                <Main 
-                    changeEdu={onChangeEducation}
-                    changeWork={onChangeWork}
-                    changeProj={onChangeProjects}
-                    changeAct={onChangeActivities}
-                    edu={education}
-                    work={work}
-                    skill={skills}
-                    proj={projects}
-                    act={activities}
-                    className='main'
-                />
+          <div>
+                <TopBar changeRoute={onRouteChange}/>
+                { route === 'home' ?
+                    <Main 
+                        changeEdu={onChangeEducation}
+                        changeWork={onChangeWork}
+                        changeProj={onChangeProjects}
+                        changeAct={onChangeActivities}
+                        edu={education}
+                        work={work}
+                        skill={skills}
+                        proj={projects}
+                        act={activities}
+                        className='main'
+                        />
+                    :( 
+                        <div>
+                            <h1>Testing</h1>
+                            <Sprint />
+                        </div>
+                    )
+                }
             </div>
-    );
+        );
   }
 }
 

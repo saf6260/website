@@ -19,7 +19,7 @@ const Main = ({changeEdu, changeWork, changeAct, changeProj, edu, work, proj, ac
                     className='pb2 background'
                 >
                     <Left changeNumber={changeEdu} num={edu} length={2} type={'education'}/>
-                    <Job topic='education' num={edu}/>
+                    <Job topic='education' num={edu} />
                     <Right changeNumber={changeEdu} num={edu} length={2} type={'education'}/>
                 </div>
             </div>
@@ -34,9 +34,9 @@ const Main = ({changeEdu, changeWork, changeAct, changeProj, edu, work, proj, ac
                     style={{display: 'flex', justifyContent: 'center'}}
                     className='pb2 background'
                 >
-                    <Left changeNumber={changeWork} num={work} length={2} type={'work'}/>
+                    <Left changeNumber={changeWork} num={work} length={4} type={'work'}/>
                     <Job topic='work' num={work}/>
-                    <Right changeNumber={changeWork} num={work} length={2} type={'work'}/>
+                    <Right changeNumber={changeWork} num={work} length={4} type={'work'}/>
                 </div>
             </div>
 
@@ -64,9 +64,9 @@ const Main = ({changeEdu, changeWork, changeAct, changeProj, edu, work, proj, ac
                     style={{display: 'flex', justifyContent: 'center'}}
                     className='pb2 background'
                 >
-                    <Left changeNumber={changeProj} num={proj} length={2} type={'projects'}/>
+                    <Left changeNumber={changeProj} num={proj} length={3} type={'projects'}/>
                     <Job topic='projects' num={proj}/>
-                    <Right changeNumber={changeProj} num={proj} length={2} type={'projects'}/>
+                    <Right changeNumber={changeProj} num={proj} length={3} type={'projects'}/>
                 </div>
             </div>
 

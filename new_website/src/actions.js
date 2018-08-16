@@ -4,6 +4,7 @@ import {
     CHANGE_PROJECTS,
     CHANGE_ACTIVITIES,
     CHANGE_LOGIN,
+    CHANGE_ROUTE
 } from './constants.js';
 
 export const changeEducation = (number) => ({
@@ -29,4 +30,9 @@ export const changeActivities = (number) => ({
 export const login = (user) => ({
     type: CHANGE_LOGIN,
     payload: user
+})
+
+export const changeCurrentRoute = (path) => ({
+    type: CHANGE_ROUTE,
+    payload: path
 })
