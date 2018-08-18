@@ -44,6 +44,20 @@ const Main = ({changeEdu, changeWork, changeAct, changeProj, edu, work, proj, ac
                 <p
                     className='f2 mb0 pl4 ml5 pb2 pt4' 
                 >
+                    Classwork:
+                </p>
+                <div 
+                    style={{display: 'flex', justifyContent: 'center'}}
+                    className='pb2 background'
+                >
+                    <Job topic='classes' num={'1'} />
+                </div>
+            </div>
+
+            <div className='background'>
+                <p
+                    className='f2 mb0 pl4 ml5 pb2 pt4' 
+                >
                     Skills:
                 </p>
                 <div 

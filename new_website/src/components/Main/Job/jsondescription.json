@@ -2,8 +2,14 @@
    {
       "type": "education",
       "number": "1",
-      "description": "Rochester Institute of Technology\n3.60 GPA\nCollege of Computer and Information Science's Dean's List Member Fall 2017 and Spring 2018\nMember of RIT Pep Band\nHead of Public Relations for the Society of Software Engineers\nCompleted Computer Science 1, Computer Science 2, and Personal Software Engineering\nCurrently enrolled in Math Models and Introduction to Software Engineering for fall 2018",
+      "description": "Rochester Institute of Technology\nSecond Year Software Engineering Major\n3.60 GPA\nCollege of Computer and Information Science's Dean's List Member Fall 2017 and Spring 2018\nMember of RIT Pep Band\nHead of Public Relations for the Society of Software Engineers",
       "image": "../../../pictures/rit.jpg"
+   },
+   {
+      "type": "classes",
+      "number": "1",
+      "description": "Completed Computer Science 1, Computer Science 2, and Personal Software Engineering\nEnrolled in Math Models and Introduction to Software Engineering Fall 2018",
+      "image": ""
    },
    {
       "type": "education",
@@ -38,7 +44,7 @@
    {
       "type": "projects",
       "number": "1",
-      "description": "This website\nSummer 2018\nSee the current stage of development along with the plan for next stages under the sprint breakdown tab of the about section",
+      "description": "Personal Profile Website\nSummer 2018\nSee the current stage of development along with the plan for next stages under the sprint breakdown tab of the about section",
       "image": ""
    },
    {

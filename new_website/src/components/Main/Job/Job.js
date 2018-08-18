@@ -21,7 +21,7 @@ const Job = ({topic, num}) => {
                 <Description data={data[0]} type={topic}/>
             </div>
         );
-    }else if(data[1] === '' && topic==='skills'){
+    }else if((data[1] === '' && topic==='skills') || topic==='classes'){
         return (
             <div className='ba bw1 mt1 ml4 mr4' style={{background:'#f3ecd8'}}>
                 <Description data={data[0]} type={topic}/>
