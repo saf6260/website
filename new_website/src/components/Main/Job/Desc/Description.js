@@ -8,7 +8,7 @@ const Description = ({data, type, id}) => {
     const general = () => {
         return(
             <div className='main'>
-                <p><b classname='short' style={{background:'transparent'}}>{splitData[0]}</b></p>
+                <p><b className='short' style={{background:'transparent'}}>{splitData[0]}</b></p>
                 <p className='short'>{splitData[1]}</p>
                 <p className='short'>{splitData[2]}</p>
                 <p className='large'>{splitData[3]}</p>

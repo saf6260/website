@@ -39,7 +39,7 @@ const general = (changeRoute) => {
                 <div className = 'dropdown-content'>
                     <p className = 'f4 dim pointer ph4'>
                         <a 
-                            href='https://www.dropbox.com/s/9giinrx539qso3c/Resume-July2018.pdf'
+                            href='https://www.dropbox.com/s/qksc7n97pm7pypp/Scott%20Frauenknecht%20Resume-Fall%202018.pdf?dl=0'
                             className='black no-underline'
                             style={{background: 'transparent'}}
                         >
@@ -48,7 +48,7 @@ const general = (changeRoute) => {
                     </p>
                     <p className = 'f4 dim pointer ph4'>
                         <a 
-                            href='https://www.dropbox.com/s/9giinrx539qso3c/Resume-July2018.pdf?dl=1'
+                            href='https://www.dropbox.com/s/qksc7n97pm7pypp/Scott%20Frauenknecht%20Resume-Fall%202018.pdf?dl=1'
                             className='black no-underline'
                             style={{background: 'transparent'}}
                         >
