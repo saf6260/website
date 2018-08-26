@@ -9,3 +9,7 @@ export const CHANGE_ACTIVITIES = 'CHANGE_ACTIVITIES';
 export const CHANGE_LOGIN = 'CHANGE_LOGIN';
 
 export const CHANGE_ROUTE = 'CHANGE_ROUTE';
+
+export const POPUP_LOGIN = 'POPUP_LOGIN';
+
+export const POPUP_REGISTER = 'POPUP_REGISTER';

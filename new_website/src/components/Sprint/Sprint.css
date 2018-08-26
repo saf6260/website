@@ -11,6 +11,18 @@
     width: 300px;
 }
 
+.description{
+    position: relative;
+    left: 60px;
+    top: -80px;
+    font-size: 18px;
+    width: 600px;
+}
+
+.firstFix{
+    top: -70px;
+}
+
 .textExtra1{
     top: -70px;
 }
@@ -34,6 +46,10 @@
 .extra{
     top: -25px;
     margin: 0px;
+}
+
+.extra2{
+    top: -35px;
 }
 
 .redCircle{

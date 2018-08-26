@@ -4,7 +4,9 @@ import {
     CHANGE_PROJECTS,
     CHANGE_ACTIVITIES,
     CHANGE_LOGIN,
-    CHANGE_ROUTE
+    CHANGE_ROUTE,
+    POPUP_REGISTER,
+    POPUP_LOGIN
 } from './constants.js';
 
 export const changeEducation = (number) => ({
@@ -35,4 +37,12 @@ export const login = (user) => ({
 export const changeCurrentRoute = (path) => ({
     type: CHANGE_ROUTE,
     payload: path
+})
+
+export const popupRegister = () => ({
+    type: POPUP_REGISTER,
+})
+
+export const popupLogin = () => ({
+    type: POPUP_LOGIN,
 })

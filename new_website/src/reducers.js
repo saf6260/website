@@ -4,7 +4,9 @@ import{
     CHANGE_PROJECTS,
     CHANGE_ACTIVITIES,
     CHANGE_LOGIN,
-    CHANGE_ROUTE
+    CHANGE_ROUTE,
+    POPUP_LOGIN,
+    POPUP_REGISTER
 } from './constants.js'
 
 const initialUser = {
@@ -51,6 +53,22 @@ export const changeRoute = (state = initialRoute, action = {}) => {
     switch(action.type){
         case CHANGE_ROUTE:
             return {...state, route: action.payload};
+        default:
+            return state;
+    }
+}
+
+const initialPopups = {
+    registerPopup: false,
+    loginPopup: false
+}
+
+export const activatePopup = (state = initialPopups, action = {}) => {
+    switch(action.type){
+        case POPUP_REGISTER: 
+            return{...state, registerPopup: !(initialPopups.registerPopup)}
+        case POPUP_LOGIN:
+            return{...state, loginPopup: !(initialPopups.loginPopup)}
         default:
             return state;
     }

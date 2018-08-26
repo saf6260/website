@@ -55,13 +55,31 @@ const general = (changeRoute) => {
                             Download Resume
                         </a>
                     </p>
+                    <p className = 'f4 dim pointer ph4'>
+                        <a 
+                            href='https://www.linkedin.com/in/scott-frauenknecht-89256a14a/'
+                            className='black no-underline'
+                            style={{background: 'transparent'}}
+                        >
+                            Linkedin
+                        </a>
+                    </p>
+                    <p className= 'f4 dim pointer ph4'>
+                        <a 
+                            href='https://github.com/saf6260'
+                            className='black no-underline'
+                            style={{background: 'transparent'}}
+                        >
+                            Github
+                        </a>
+                    </p>
                 </div>
             </div>
         </nav>
     );
 }
 
-const Navigation = ({changeRoute, isSignedIn}) => {
+const Navigation = ({changeRoute, isSignedIn, registerClicked, loginClicked}) => {
 
     if(isSignedIn) {
         return(
@@ -89,10 +107,16 @@ const Navigation = ({changeRoute, isSignedIn}) => {
                         Account
                     </span>
                     <div className = 'dropdown-content'>
-                        <p className = 'f4 dim pointer ph4'>
+                        <p 
+                            className = 'f4 dim pointer ph4'
+                            onClick={registerClicked}
+                        >
                             Register
                         </p>
-                        <p className = 'f4 dim pointer ph4'>
+                        <p 
+                            className = 'f4 dim pointer ph4'
+                            onClick={loginClicked}
+                        >
                             Login
                         </p>
                     </div>

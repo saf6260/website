@@ -4,8 +4,10 @@ import './App.css';
 import TopBar from './components/TopBar/TopBar';
 import Main from './components/Main/Main';
 import Sprint from './components/Sprint/Sprint';
+import RegisterPopup from './components/Popup/RegisterPopup';
+import LoginPopup from './components/Popup/LoginPopup';
 
-import {changeEducation, changeWork, changeProjects, changeActivities, login, changeCurrentRoute} from './actions'
+import {changeEducation, changeWork, changeProjects, changeActivities, login, changeCurrentRoute, popupRegister, popupLogin} from './actions'
 
 const mapStateToProps = state => {
     return {
@@ -17,6 +19,8 @@ const mapStateToProps = state => {
         projects: state.changeNumber.projects,
         activities: state.changeNumber.activities,
         route: state.changeRoute.route,
+        registerPopup: state.activatePopup.regitsterPopup,
+        loginPopup: state.activatePopup.loginPopup,
     }
 }
 
@@ -27,16 +31,22 @@ const mapDispatchToProps = (dispatch) => {
         onChangeWork: (event) => dispatch(changeWork(event)),
         onChangeProjects: (event) => dispatch(changeProjects(event)),
         onChangeActivities: (event) => dispatch(changeActivities(event)),
-        onRouteChange: (event) => dispatch(changeCurrentRoute(event))
+        onRouteChange: (event) => dispatch(changeCurrentRoute(event)),
+        onRegisterClick: () => dispatch(popupRegister()),
+        onLoginClick: () => dispatch(popupLogin())
     }
 }
 
 class App extends Component {
     render() {
-        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange} = this.props;
+        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup} = this.props;
       return (
           <div>
-                <TopBar changeRoute={onRouteChange}/>
+              <TopBar 
+                  changeRoute={onRouteChange}
+                  loginClicked={onLoginClick}
+                  registerClicked={onRegisterClick}
+              />
                 { route === 'home' ?
                     <Main 
                         changeEdu={onChangeEducation}
@@ -56,6 +66,14 @@ class App extends Component {
                             <Sprint />
                         </div>
                     )
+                }
+                {registerPopup ? 
+                        <RegisterPopup />
+                        : null
+                }
+                {loginPopup ? 
+                        <LoginPopup />
+                        : null
                 }
             </div>
         );
