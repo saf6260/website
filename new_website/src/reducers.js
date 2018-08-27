@@ -6,7 +6,11 @@ import{
     CHANGE_LOGIN,
     CHANGE_ROUTE,
     POPUP_LOGIN,
-    POPUP_REGISTER
+    POPUP_LOGIN_CLOSE,
+    POPUP_REGISTER,
+    POPUP_REGISTER_CLOSE,
+    LOGIN_SWITCH,
+    REGISTER_SWITCH
 } from './constants.js'
 
 const initialUser = {
@@ -69,6 +73,14 @@ export const activatePopup = (state = initialPopups, action = {}) => {
             return{...state, registerPopup: !(initialPopups.registerPopup)}
         case POPUP_LOGIN:
             return{...state, loginPopup: !(initialPopups.loginPopup)}
+        case POPUP_LOGIN_CLOSE:
+            return{...state, loginPopup: (initialPopups.loginPopup)}
+        case POPUP_REGISTER_CLOSE:
+            return{...state, registerPopup: (initialPopups.registerPopup)}
+        case LOGIN_SWITCH:
+            return Object.assign({}, state, {registerPopup: true, loginPopup:false});
+        case REGISTER_SWITCH:
+            return Object.assign({}, state, {registerPopup: false, loginPopup:true});
         default:
             return state;
     }

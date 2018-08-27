@@ -7,7 +7,7 @@ import Sprint from './components/Sprint/Sprint';
 import RegisterPopup from './components/Popup/RegisterPopup';
 import LoginPopup from './components/Popup/LoginPopup';
 
-import {changeEducation, changeWork, changeProjects, changeActivities, login, changeCurrentRoute, popupRegister, popupLogin} from './actions'
+import {changeEducation, changeWork, changeProjects, changeActivities, login, changeCurrentRoute, popupRegister, popupLogin, popupRegisterClose, popupLoginClose, loginSwitch, registerSwitch} from './actions'
 
 const mapStateToProps = state => {
     return {
@@ -19,7 +19,7 @@ const mapStateToProps = state => {
         projects: state.changeNumber.projects,
         activities: state.changeNumber.activities,
         route: state.changeRoute.route,
-        registerPopup: state.activatePopup.regitsterPopup,
+        registerPopup: state.activatePopup.registerPopup,
         loginPopup: state.activatePopup.loginPopup,
     }
 }
@@ -33,13 +33,17 @@ const mapDispatchToProps = (dispatch) => {
         onChangeActivities: (event) => dispatch(changeActivities(event)),
         onRouteChange: (event) => dispatch(changeCurrentRoute(event)),
         onRegisterClick: () => dispatch(popupRegister()),
-        onLoginClick: () => dispatch(popupLogin())
+        onLoginClick: () => dispatch(popupLogin()),
+        onRegisterClose: () => dispatch(popupRegisterClose()),
+        onLoginClose: () => dispatch(popupLoginClose()),
+        onLoginSwitch: () => dispatch(loginSwitch()),
+        onRegisterSwitch: () => dispatch(registerSwitch()),
     }
 }
 
 class App extends Component {
     render() {
-        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup} = this.props;
+        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup, onLoginClose, onRegisterClose, onLoginSwitch, onRegisterSwitch} = this.props
       return (
           <div>
               <TopBar 
@@ -68,11 +72,17 @@ class App extends Component {
                     )
                 }
                 {registerPopup ? 
-                        <RegisterPopup />
+                        <RegisterPopup 
+                            registerClose={onRegisterClose}
+                            registerSwitch={onRegisterSwitch}
+                        />
                         : null
                 }
                 {loginPopup ? 
-                        <LoginPopup />
+                        <LoginPopup 
+                            loginClose={onLoginClose}
+                            loginSwitch={onLoginSwitch}
+                        />
                         : null
                 }
             </div>

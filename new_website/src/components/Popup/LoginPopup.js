@@ -1,14 +1,46 @@
 import React from 'react';
 import './Popup.css';
 
-const LoginPopup = () => {
-    return(
-        <div className='popup'>
-            <div className='popup_inner'>
-                <h1>Test</h1>
+class LoginPopup extends React.Component {
+
+    constructor({registerClicked, loginSwitch, loginClose}){
+        super({registerClicked, loginSwitch, loginClose});
+    }
+
+    render(){
+        const {loginSwitch, loginClose} = this.props;
+
+        const handleBounds = (e) => {
+            if(!this.node.contains(e.target)){
+                loginClose();
+            }
+        }
+
+        return(
+        <div 
+            className='popup'
+            onClick={handleBounds}
+        >
+            <div className='popup_inner' ref={node => {this.node = node;}}>
+                <h1 className='header'>Sign In Here:</h1>
+                <h2 className='header2'>Welcome Back!</h2>
+                <p className='mini_header'>Email:</p>
+                <input type='email' name='email' className='form'></input>
+                <p className='mini_header'>Password:</p>
+                <input type='password' name='password' className='form'></input>
+                <button className='submit'>Submit</button>
+                <br></br>
+                <p className='link'><a href=''>Forgot Your Password?</a></p>
+                <p className='link oneline no_link'>Not registered? Click </p>
+                <p 
+                    className='switch oneline'
+                    onClick={loginSwitch}
+                >
+                    Here
+                </p>
             </div>
         </div>
-    );
+    );}
 } 
 
 export default LoginPopup;
