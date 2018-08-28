@@ -79,7 +79,19 @@ const general = (changeRoute) => {
     );
 }
 
-const Navigation = ({changeRoute, isSignedIn, registerClicked, loginClicked}) => {
+const checkClose = (route, loginPopup, registerPopup, registerClose, loginClose) => {
+    if(loginPopup){
+        loginClose();
+        route();
+    } else if(registerPopup){
+        registerClose();
+        route();
+    } else{
+        route();
+    }
+}
+
+const Navigation = ({changeRoute, isSignedIn, registerClicked, loginClicked, registerPopup, loginPopup, registerClose, loginClose}) => {
 
     if(isSignedIn) {
         return(
@@ -109,13 +121,13 @@ const Navigation = ({changeRoute, isSignedIn, registerClicked, loginClicked}) =>
                     <div className = 'dropdown-content'>
                         <p 
                             className = 'f4 dim pointer ph4'
-                            onClick={registerClicked}
+                            onClick={() => checkClose(registerClicked, loginPopup, registerPopup, registerClose, loginClose)}
                         >
                             Register
                         </p>
                         <p 
                             className = 'f4 dim pointer ph4'
-                            onClick={loginClicked}
+                            onClick={() => checkClose(loginClicked, loginPopup, registerPopup, registerClose, loginClose)}
                         >
                             Login
                         </p>

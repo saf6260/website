@@ -26,8 +26,8 @@ const Sprint = () => {
                     <p className='text textExtra1'><strong>Sprint Two</strong></p>
                     <div className='description'>
                         <p>Focus on the main page and tab abilities for new website layout and controls.</p>
-                        <p>Date of Completion: </p>
-                        <p>Notes Upon Completion: </p>
+                        <p>Date of Completion: August 28th, 2018</p>
+                        <p>Notes Upon Completion: The rewrite took longer than expected, however functionality is higher and the look is a lot more professional and cleaner.</p>
                     </div>
                 </div>
                 <div className='bar barTwo'></div>

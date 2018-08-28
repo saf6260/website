@@ -3,10 +3,6 @@ import './Popup.css';
 
 class LoginPopup extends React.Component {
 
-    constructor({registerClicked, loginSwitch, loginClose}){
-        super({registerClicked, loginSwitch, loginClose});
-    }
-
     render(){
         const {loginSwitch, loginClose} = this.props;
 
@@ -31,7 +27,7 @@ class LoginPopup extends React.Component {
                 <button className='submit'>Submit</button>
                 <br></br>
                 <p className='link'><a href=''>Forgot Your Password?</a></p>
-                <p className='link oneline no_link'>Not registered? Click </p>
+                <p className='link'>Not registered? Click </p>
                 <p 
                     className='switch oneline'
                     onClick={loginSwitch}

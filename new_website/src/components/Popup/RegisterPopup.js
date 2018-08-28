@@ -3,10 +3,6 @@ import './Popup.css';
 
 class RegisterPopup extends React.Component{
 
-    constructor({registerSwitch, registerClose}){
-        super({registerSwitch, registerClose});
-    }
-    
     render(){
 
     const {registerSwitch, registerClose} = this.props;
@@ -30,7 +26,7 @@ class RegisterPopup extends React.Component{
                 <p className='mini_header'>Password:</p>
                 <input type='password' name='password' className='form'></input>
                 <button className='submit'>Submit</button>
-                <p className='no_link'>Already Registered? Click</p>
+                <p className='link'>Already Registered? Click</p>
                 <p className='switch' onClick={registerSwitch}>Here</p>
             </div>
         </div>

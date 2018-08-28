@@ -62,6 +62,7 @@
 
 .switch{
     text-decoration: underline;
+    text-align: center;
 }
 
 .switch:Hover{

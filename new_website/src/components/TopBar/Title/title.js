@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Title = () => {
+const Title = ({changeRoute}) => {
     return(
         <div>
             <p 
                 className='tc f1 b link underline dim pointer ma1 pa2'
-                style={{color: 'black'}}>
+                style={{color: 'black'}}
+                onClick={changeRoute}
+            >
                 Scott Frauenknecht
             </p>
             <p 

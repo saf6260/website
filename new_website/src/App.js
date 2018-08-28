@@ -44,12 +44,35 @@ const mapDispatchToProps = (dispatch) => {
 class App extends Component {
     render() {
         const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup, onLoginClose, onRegisterClose, onLoginSwitch, onRegisterSwitch} = this.props
+        const changeRoute = () => {
+            if(registerPopup){
+                onRegisterClose();
+            }else if(loginPopup){
+                onLoginClose();
+            }
+            onRouteChange('sprint');
+        }
+
+        const changeHome = () => {
+            if(registerPopup){
+                onRegisterClose();
+            }else if(loginPopup){
+                onLoginClose();
+            }
+            onRouteChange('home');
+        }
+
       return (
           <div>
               <TopBar 
-                  changeRoute={onRouteChange}
+                  changeRoute={changeRoute}
+                  changeHome={changeHome}
                   loginClicked={onLoginClick}
                   registerClicked={onRegisterClick}
+                  registerPopup={registerPopup}
+                  loginPopup={loginPopup}
+                  registerClose={onRegisterClose}
+                  loginClose={onLoginClose}
               />
                 { route === 'home' ?
                     <Main 
